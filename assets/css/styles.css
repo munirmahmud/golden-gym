@@ -135,3 +135,105 @@
 .btn:hover {
     background: var(--black);
 }
+
+/* Services */
+.services {
+    padding: 6rem calc((100vw - 1200px) / 2);
+}
+.services__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.services__img {
+    width: 100%;
+    height: 100%;
+}
+.topline {
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.services__heading {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+.services__features {
+    list-style: none;
+}
+.services__feature {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+.services__feature i {
+    margin-right: 0.5rem;
+    color: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    .services__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Membership */
+.membership {
+    background: var(--black);
+    color: var(--white);
+    padding: 6rem calc((100vw - 1200px) / 2);
+    text-align: center;
+}
+.membership h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 1rem;
+}
+.membership__desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+}
+.membership__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.membership__card {
+    padding: 2rem;
+    min-height: 450px;
+    width: 325px;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.membership__perks {
+    min-height: 150px;
+}
+.membership__card p {
+    margin-bottom: 1rem;
+}
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--red);
+}
+.membership__card h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .membership__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .membership__card {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
